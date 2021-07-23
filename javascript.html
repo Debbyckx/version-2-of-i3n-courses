@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ceci est mon premier site web créé lors de ma formation">
+    <title>Mon premier site web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lily+Script+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <!-- Balise vide, l'image sera ajoutée en css -->
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="Aller à la page">Accueil</a>
+                </li>
+                <li>
+                    <a href="javascript.html" title="Aller à la page">JavaScript</a>
+                </li>
+                <li>
+                    <a href="https://interface3namur.be" title="Aller sur le site" target="_blank">Interface3.Namur</a>   
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>JavaScript</h1>
+        <section>
+            <h2>Mes premiers scripts</h2>
+            <!-- <article>
+                <h3>Exercice 01: Demande et affichage du nom et prénom.</h3>
+                <button type="button" onclick="bonjourPrenom()">Lancer</button>
+            </article> -->
+            <article>
+                <h3>Exercice 01: Demande et affichage du nom et prénom.</h3>
+                <form method="post" autocomplete="off">
+                    <div>
+                        <label for="nom">Nom:</label><br>
+                        <input type="text" id="nom">
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom:</label><br>
+                        <input type="text" id="prenom">
+                    </div>
+                    <div>
+                        <input type="button" value="Envoyer" onclick="returnForm()">
+                        <input type="reset" value="Reset" onclick="resetForm()">
+                    </div>
+                    <p id="reponseForm"></p>
+                </form>
+            </article>
+            <article>
+                <h3>Exercice 02 : Calcul de prix</h3> 
+                <button type="button" onclick="calculPrix()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 03 : Opérations de base</h3> 
+                <button type="button" onclick="operationBase()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 04 : Première condition</h3> 
+                <button type="button" onclick="premiereCondition()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 05 : Bissextile</h3> 
+                <button type="button" onclick="bissextile()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 06 : Commentaire sur l'âge</h3> 
+                <button type="button" onclick="commentAge()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 07 : Oui ou non ? (switch)</h3> 
+                <button type="button" onclick="ouiOuNon()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 08 : Les tiroirs</h3> 
+                <button type="button" onclick="tiroirs()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 09 : La boucle while</h3> 
+                <button type="button" onclick="boucleWhile()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 10 : La boucle do.. while</h3> 
+                <button type="button" onclick="boucleDoWhile()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 11 : La boucle for</h3> 
+                <button type="button" onclick="boucleFor()">Lancer</button> 
+            </article>
+            <article>
+                <h3>Exercice 12 : Changer la couleur de fond</h3> 
+                <p>Rouge</p>
+                <input type="range" id="sliderR" min="1" max="255" step="1" value="255" oninput="changeCouleur()">
+                <p>Vert</p>
+                <input type="range" id="sliderV" min="1" max="255" step="1" value="255" oninput="changeCouleur()">
+                <p>Bleu</p>
+                <input type="range" id="sliderB" min="1" max="255" step="1" value="255" oninput="changeCouleur()">
+            </article>
+            <article>
+
+                <h3>Exercice 13 : Test de mot de passe</h3>
+                <form method="post" autocomplete="off">
+                    <div>
+                        <label for="mdp">Créez un mot de passe :</label><span id="autorisation"></span><br>
+                        <input type="password" id="mdp" oninput="verificationCaracteres()">
+                    </div>
+                    <div>
+                        <input type="button" value="Envoyer" onclick="verificationMdp()">
+                        <input type="reset" value="Reset" onclick="resetFormMdp()">
+                    </div>
+                    <p id="retourLenght"></p>
+                    <p id="retourMaj"></p>
+                    <p id="retourChiffre"></p>
+                    <p id="retourSpecial"></p>
+
+                    <div id="retourValid2">                
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Informations</h3>
+        <p>Site web pour <strong>Découverte de la programmation</strong></p>
+        <p><strong>Sébastien Vanwynsberghe</strong> &copy;2021</p>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
